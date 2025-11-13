@@ -52,7 +52,6 @@ student-spotlight-smit-batch17/
 │   ├── layout.css
 │   ├── components.css
 │   ├── responsive.css
-│   └── darkmode.css
 │
 ├── /js/                    # ⚙️ Interactivity and data
 │   ├── script.js
