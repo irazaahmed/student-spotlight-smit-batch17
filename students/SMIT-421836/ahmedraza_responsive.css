@@ -135,5 +135,19 @@
         gap: 1.5rem;
     }
 
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+    }
+
+    .contact-info-card, 
+    .contact-form-card {
+        padding: 1.5rem; 
+    }
 
 }
