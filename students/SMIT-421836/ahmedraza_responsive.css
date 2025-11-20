@@ -150,4 +150,23 @@
         padding: 1.5rem; 
     }
 
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center; 
+    }
+
+    .footer-col h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-brand p {
+        margin: 0 auto; 
+    }
+    
+    .footer-col ul li a:hover {
+        padding-left: 0;
+    }
+
 }

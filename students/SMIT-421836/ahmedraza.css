@@ -425,7 +425,7 @@ h1 {
 
 .project-info {
   padding: 1.5rem;
-  text-align: center;
+  text-align: left;
   display: flex;
   flex-direction: column;
   flex-grow: 1; 
@@ -447,9 +447,10 @@ h1 {
 
 .project-buttons {
   display: flex;
-  justify-content: center; 
+  justify-content: left; 
   gap: 10px; 
   margin-top: auto; 
+  width: 100%;
 }
 
 .btn-small {
@@ -490,7 +491,6 @@ h1 {
 }
 
 /* Contact Us */
-
 .contact-section {
   padding: 6rem 0;
   background-color: var(--card-bg);
@@ -581,3 +581,86 @@ h1 {
   font-size: 1rem;
 }
 
+/* Footer */
+
+
+.footer {
+  background-color: #0d0d0d;
+  padding-top: 4rem;
+  color: #fff;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr; 
+  gap: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-logo span {
+  color: var(--accent-color);
+}
+
+.footer-brand p {
+  color: #b3b3b3;
+  line-height: 1.6;
+  max-width: 350px; 
+}
+
+.footer-col h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  position: relative;
+}
+
+
+.footer-col h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 30px;
+  height: 2px;
+  background-color: var(--accent-color);
+}
+
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.footer-col ul li a:hover {
+  color: var(--accent-color);
+  padding-left: 5px;
+}
+
+.footer-bottom {
+  background-color: #050505; 
+  padding: 1.5rem 0;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.footer-bottom p {
+  color: #777;
+  font-size: 0.9rem;
+}
