@@ -395,7 +395,6 @@ h1 {
   background-color: var(--bg-color); 
 }
 
-
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -408,6 +407,8 @@ h1 {
   box-shadow: 0 5px 15px var(--shadow-color);
   overflow: hidden; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column; 
 }
 
 .project-card:hover {
@@ -425,6 +426,10 @@ h1 {
 .project-info {
   padding: 1.5rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+  justify-content: space-between; 
 }
 
 .project-info h3 {
@@ -437,25 +442,51 @@ h1 {
 .project-info p {
     font-size: 0.9rem;
     color: #666;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
-.project-info a {
-  color: var(--accent-color);
-  text-decoration: none;
+.project-buttons {
+  display: flex;
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: auto; 
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  border-radius: 50px; 
+  font-size: 0.85rem;
   font-weight: 600;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px; 
 }
 
-.project-info a:hover {
-    color: #005f66; 
-    text-decoration: underline;
+.btn-live {
+  background-color: transparent;
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
 }
 
-.project-info a i {
-    font-size: 0.8rem;
-    margin-left: 5px; 
+.btn-live:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-github {
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  color: #fff;
+}
+
+.btn-github:hover {
+  background-color: var(--bg-color);
+  border-color: var(--accent-color);
+  transform: translateY(-2px);
+  color: var(--accent-color);
 }
 
 /* Contact Us */
